@@ -1,0 +1,6 @@
+@NeuroPulseAPI_HostAddress = http://localhost:5282
+
+GET {{NeuroPulseAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
