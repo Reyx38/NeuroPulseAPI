@@ -59,7 +59,7 @@ namespace NeuroPulseAPI.Controllers
         {
             if (id != dto.UsuarioId) return BadRequest();
 
-            var actualizado = await usuarioServices.RegisterAsync(dto);
+            var actualizado = await usuarioServices.Update(dto);
             return actualizado ? NoContent() : NotFound();
         }
 
